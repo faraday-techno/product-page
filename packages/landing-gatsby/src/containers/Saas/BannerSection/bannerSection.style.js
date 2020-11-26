@@ -76,13 +76,19 @@ const BannerObject = styled.div`
     margin-left: auto;
     position: relative;
     .dashboardWrapper {
+      margin-top: 90px;
+      max-width: 800px;
       position: absolute;
       top: 0;
-      right: 0;
+      right: 20px;
       .chatObject {
         position: absolute;
         top: 20px;
         left: 120px;
+      }
+      .wrapperImage {
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
       }
     }
   }

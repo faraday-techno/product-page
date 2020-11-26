@@ -18,7 +18,7 @@ const FeatureSection = ({
   featureDescription,
   iconStyle,
   contentStyle,
-  blockWrapperStyle,
+  blockWrapperStyle
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -73,14 +73,14 @@ FeatureSection.propTypes = {
   sectionTitle: PropTypes.object,
   sectionSubTitle: PropTypes.object,
   featureTitle: PropTypes.object,
-  featureDescription: PropTypes.object,
+  featureDescription: PropTypes.object
 };
 
 // FeatureSection default style
 FeatureSection.defaultProps = {
   // section header default style
   sectionHeader: {
-    mb: ['40px', '40px', '40px', '80px'],
+    mb: ['40px', '40px', '40px', '80px']
   },
   // sub section default style
   sectionSubTitle: {
@@ -91,7 +91,7 @@ FeatureSection.defaultProps = {
     letterSpacing: '0.15em',
     fontWeight: '700',
     color: '#5268db',
-    mb: '10px',
+    mb: '10px'
   },
   // section title default style
   sectionTitle: {
@@ -100,20 +100,20 @@ FeatureSection.defaultProps = {
     fontWeight: '500',
     color: '#0f2137',
     letterSpacing: '-0.025em',
-    mb: '0',
+    mb: '0'
   },
   // feature row default style
   row: {
     flexBox: true,
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   },
   // feature col default style
   col: {
-    width: [1, 1 / 2, 1 / 3, 1 / 3],
+    width: [1, 1 / 2, 1 / 3, 1 / 3]
   },
   // feature block wrapper default style
   blockWrapperStyle: {
-    p: ['30px', '20px', '20px', '20px'],
+    p: ['30px', '20px', '20px', '20px']
   },
   // feature icon default style
   iconStyle: {
@@ -128,11 +128,11 @@ FeatureSection.defaultProps = {
     color: '#ffffff',
     overflow: 'hidden',
     mb: ['20px', '20px', '20px', '30px'],
-    borderBottomLeftRadius: '50%',
+    borderBottomLeftRadius: '50%'
   },
   // feature content default style
   contentStyle: {
-    textAlign: 'left',
+    textAlign: 'left'
   },
   // feature title default style
   featureTitle: {
@@ -141,14 +141,14 @@ FeatureSection.defaultProps = {
     color: '#0f2137',
     lineHeight: '1.5',
     mb: ['10px', '10px', '10px', '20px'],
-    letterSpacing: '-0.020em',
+    letterSpacing: '-0.020em'
   },
   // feature description default style
   featureDescription: {
     fontSize: '15px',
     lineHeight: '1.75',
-    color: '#343d4ccc',
-  },
+    color: '#343d4ccc'
+  }
 };
 
 export default FeatureSection;

@@ -43,7 +43,6 @@ const TestimonialSection = ({
       }
     }
   `);
-  console.log(Data);
 
   // Glide js options
   const glideOptions = {

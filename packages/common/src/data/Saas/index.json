@@ -149,38 +149,56 @@
     {
       "id": 1,
       "icon": "flaticon-briefing",
-      "title": "App Development",
-      "description": "We are specialized at custom Saas Application Development and special features ."
+      "title": "Auto Book Loads",
+      "description": "Auto Book loads based on the set filters."
     },
     {
       "id": 2,
-      "icon": "flaticon-trophy",
-      "title": "10 Times Award",
-      "description": "We are globally recognised for our services and won a lot of prices around the world ."
+      "icon": "flaticon-stopwatch",
+      "title": "Max allowed stops",
+      "description": "Set maximum allowed stops."
     },
     {
       "id": 3,
-      "icon": "flaticon-atom",
-      "title": "Cloud Stroage",
-      "description": "LiteSpeed Web Server known for its high performance and low resource consumption."
+      "icon": "flaticon-money-bag",
+      "title": "Price increase detection",
+      "description": "Automatically detect price hikes for the loads."
     },
     {
       "id": 4,
-      "icon": "flaticon-ruler",
-      "title": "Client Satisfaction",
-      "description": "Client Satisfaction is our first priority and We are best at it .Keep In Touch."
+      "icon": "flaticon-briefing",
+      "title": "Auto book on Price increase",
+      "description": "Auto book loads when there is a price increase."
     },
     {
       "id": 5,
-      "icon": "flaticon-creative",
-      "title": "UX Planning",
-      "description": "We provide the best UI/UX Design by following the latest trends of the market  ."
+      "icon": "flaticon-strategy",
+      "title": "1-Click book",
+      "description": "1-Click book saves you extra click needed to book the load."
     },
     {
       "id": 6,
+      "icon": "flaticon-link",
+      "title": "Highlight new loads",
+      "description": "Highlight newly added loads."
+    },
+    {
+      "id": 7,
+      "icon": "flaticon-stopwatch-1",
+      "title": "Auto Refresh",
+      "description": "Configurable auto refresh let's you focus on loads rather than clicks."
+    },
+    {
+      "id": 8,
       "icon": "flaticon-conversation",
-      "title": "Customer Support",
-      "description": "A Dedicated support team is always ready to provide best support to our customers."
+      "title": "Sound notification",
+      "description": "Sound notification when load is booked or new load appears on the board."
+    },
+    {
+      "id": 9,
+      "icon": "flaticon-user",
+      "title": "User friendly UX",
+      "description": "User friendly user experience."
     }
   ],
   "Timeline": [
@@ -219,11 +237,6 @@
     {
       "label": "Home",
       "path": "#banner_section",
-      "offset": "70"
-    },
-    {
-      "label": "Service",
-      "path": "#service_section",
       "offset": "70"
     },
     {

@@ -6,7 +6,6 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import { GlobalStyle, ContentWrapper } from '../containers/Saas/saas.style';
 import Navbar from '../containers/Saas/Navbar';
 import BannerSection from '../containers/Saas/BannerSection';
-import FeatureSection from '../containers/Saas/FeatureSection';
 import VisitorSection from '../containers/Saas/VisitorSection';
 import ServiceSection from '../containers/Saas/ServiceSection';
 import FaqSection from '../containers/Saas/FaqSection';
@@ -23,7 +22,7 @@ export default () => {
   return (
     <ThemeProvider theme={saasTheme}>
       <Fragment>
-        <SEO title="Saas | A react next landing page" />
+        <SEO title="Superfly | Relay Auto Booker" />
         <ResetCSS />
         <GlobalStyle />
         <ContentWrapper>
@@ -33,9 +32,8 @@ export default () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <FeatureSection />
-          <VisitorSection />
           <ServiceSection />
+          <VisitorSection />
           <PricingSection />
           <TestimonialSection />
           <PartnerSection />

@@ -88,6 +88,30 @@ const ServiceSectionWrapper = styled.section`
           }
         }
       }
+      &:nth-child(7) {
+        .feature__block {
+          .icon__wrapper {
+            background: #ebfff2;
+            color: #29c05e;
+          }
+        }
+      }
+      &:nth-child(8) {
+        .feature__block {
+          .icon__wrapper {
+            background: #ffecfa;
+            color: #e764a5;
+          }
+        }
+      }
+      &:nth-child(9) {
+        .feature__block {
+          .icon__wrapper {
+            background: #f5eeff;
+            color: #a55cef;
+          }
+        }
+      }
     }
   }
 `;

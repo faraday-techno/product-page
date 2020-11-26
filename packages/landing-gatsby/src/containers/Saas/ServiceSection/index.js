@@ -38,7 +38,7 @@ const ServiceSection = ({
       <Container>
         <Box {...sectionHeader}>
           <Text content="OUR FEATURES" {...sectionSubTitle} />
-          <Heading content="Why you should choose our Saas" {...sectionTitle} />
+          <Heading content="Why you should choose our services" {...sectionTitle} />
         </Box>
         <Box className="row" {...row}>
           {Data.saasJson.Service.map((feature, index) => (
