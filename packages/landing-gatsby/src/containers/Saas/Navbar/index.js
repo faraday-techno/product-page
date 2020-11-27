@@ -24,7 +24,6 @@ const Navbar = ({ navbarStyle, logoStyle, row, menuWrapper }) => {
       }
     }
   `);
-  console.log(Data);
 
   const { state, dispatch } = useContext(DrawerContext);
 

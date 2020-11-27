@@ -17,7 +17,7 @@ const Footer = ({
   colTwo,
   titleStyle,
   logoStyle,
-  textStyle,
+  textStyle
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -44,8 +44,10 @@ const Footer = ({
               title="Hosting"
               logoStyle={logoStyle}
             />
-            <Text content="hello@redq.io" {...textStyle} />
-            <Text content="+479-443-9334" {...textStyle} />
+            <Text content="bravetechpro@gmail.com" {...textStyle} />
+            <a href="https://t.me/relayautobooker" className="ListItem">
+              Join our Telegram
+            </a>
           </Box>
           {/* End of footer logo column */}
           <Box {...colTwo}>
@@ -55,7 +57,12 @@ const Footer = ({
                 <List>
                   {widget.menuItems.map((item, index) => (
                     <ListItem key={`footer-list-item-${index}`}>
-                      <a href={item.url} className="ListItem">
+                      <a
+                        target="_blank"
+                        rel="noreferrer"
+                        href={item.url}
+                        className="ListItem"
+                      >
                         {item.text}
                       </a>
                     </ListItem>
@@ -79,7 +86,7 @@ Footer.propTypes = {
   colTwo: PropTypes.object,
   titleStyle: PropTypes.object,
   textStyle: PropTypes.object,
-  logoStyle: PropTypes.object,
+  logoStyle: PropTypes.object
 };
 
 // Footer default style
@@ -89,7 +96,7 @@ Footer.defaultProps = {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
-    mr: '-15px',
+    mr: '-15px'
   },
   // Footer col one style
   colOne: {
@@ -97,39 +104,39 @@ Footer.defaultProps = {
     mt: [0, '13px'],
     mb: ['30px', 0],
     pl: ['15px', 0],
-    pr: ['15px', '15px', 0],
+    pr: ['15px', '15px', 0]
   },
   // Footer col two style
   colTwo: {
     width: ['100%', '65%', '65%', '77%'],
     flexBox: true,
-    flexWrap: 'wrap',
+    flexWrap: 'wrap'
   },
   // Footer col default style
   col: {
     width: ['100%', '50%', '50%', '25%'],
     pl: '15px',
     pr: '15px',
-    mb: '30px',
+    mb: '30px'
   },
   // widget title default style
   titleStyle: {
     color: '#343d48',
     fontSize: '16px',
     fontWeight: '700',
-    mb: '30px',
+    mb: '30px'
   },
   // Default logo size
   logoStyle: {
     width: '100px',
-    mb: '15px',
+    mb: '15px'
   },
   // widget text default style
   textStyle: {
     color: '#0f2137',
     fontSize: '16px',
-    mb: '10px',
-  },
+    mb: '10px'
+  }
 };
 
 export default Footer;

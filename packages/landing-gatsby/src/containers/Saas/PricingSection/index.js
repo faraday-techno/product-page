@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 import Icon from 'react-icons-kit';
@@ -15,8 +15,7 @@ import PricingTable, {
   PricingPrice,
   PricingButton,
   PricingList,
-  ListItem,
-  PricingButtonWrapper,
+  ListItem
 } from './pricing.style';
 
 import { checkmark } from 'react-icons-kit/icomoon/checkmark';
@@ -33,7 +32,7 @@ const PricingSection = ({
   priceLabelStyle,
   buttonStyle,
   buttonFillStyle,
-  listContentStyle,
+  listContentStyle
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -45,19 +44,6 @@ const PricingSection = ({
           description
           buttonLabel
           url
-          freePlan
-          listItems {
-            content
-          }
-        }
-        YEARLY_PRICING_TABLE {
-          name
-          price
-          priceLabel
-          description
-          buttonLabel
-          url
-          freePlan
           listItems {
             content
           }
@@ -66,17 +52,11 @@ const PricingSection = ({
     }
   `);
 
-  const [state, setState] = useState({
-    data: Data.saasJson.MONTHLY_PRICING_TABLE,
-    active: true,
-  });
-
-  const data = state.data;
-  const activeStatus = state.active;
+  const data = Data.saasJson.MONTHLY_PRICING_TABLE;
 
   const pricingCarouselOptions = {
     type: 'slider',
-    perView: 3,
+    perView: 2,
     gap: 30,
     bound: true,
     breakpoints: {
@@ -84,32 +64,32 @@ const PricingSection = ({
         perView: 2,
         peek: {
           before: 100,
-          after: 100,
-        },
+          after: 100
+        }
       },
       990: {
         perView: 1,
         peek: {
           before: 160,
-          after: 160,
-        },
+          after: 160
+        }
       },
       767: {
         perView: 1,
         peek: {
           before: 80,
-          after: 80,
-        },
+          after: 80
+        }
       },
       575: {
         perView: 1,
         gap: 15,
         peek: {
           before: 20,
-          after: 20,
-        },
-      },
-    },
+          after: 20
+        }
+      }
+    }
   };
 
   return (
@@ -118,7 +98,7 @@ const PricingSection = ({
         <Box {...secTitleWrapper}>
           <Text {...secText} />
           <Heading {...secHeading} />
-          <PricingButtonWrapper>
+          {/* <PricingButtonWrapper>
             <Button
               title="Monthly Plan"
               className={activeStatus ? 'active-item' : ''}
@@ -139,7 +119,7 @@ const PricingSection = ({
                 })
               }
             />
-          </PricingButtonWrapper>
+          </PricingButtonWrapper> */}
         </Box>
         <Box {...row}>
           <GlideCarousel
@@ -217,24 +197,24 @@ PricingSection.propTypes = {
   descriptionStyle: PropTypes.object,
   priceStyle: PropTypes.object,
   priceLabelStyle: PropTypes.object,
-  listContentStyle: PropTypes.object,
+  listContentStyle: PropTypes.object
 };
 
 PricingSection.defaultProps = {
   sectionWrapper: {
     as: 'section',
     pt: ['60px', '80px', '80px', '80px', '120px'],
-    pb: ['20px', '20px', '20px', '80px'],
+    pb: ['20px', '20px', '20px', '80px']
   },
   row: {
     flexBox: true,
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   secTitleWrapper: {
-    mb: ['50px', '75px'],
+    mb: ['50px', '75px']
   },
   secText: {
     content: 'PRICING PLAN',
@@ -245,21 +225,21 @@ PricingSection.defaultProps = {
     letterSpacing: '0.15em',
     fontWeight: '700',
     color: '#5268db',
-    mb: '10px',
+    mb: '10px'
   },
   secHeading: {
-    content: 'What’s our monthly pricing subscription',
+    content: 'Here is our subscription options',
     textAlign: 'center',
     fontSize: ['20px', '24px'],
     fontWeight: '500',
     color: 'headingColor',
     letterSpacing: '-0.025em',
-    mb: '0',
+    mb: '0'
   },
   col: {
     width: [1, 1 / 2, 1 / 2, 1 / 3],
     pr: '15px',
-    pl: '15px',
+    pl: '15px'
   },
   nameStyle: {
     fontSize: ['20px', '20px', '22px', '22px', '22px'],
@@ -267,14 +247,14 @@ PricingSection.defaultProps = {
     color: 'headingColor',
     letterSpacing: '-0.025em',
     textAlign: 'center',
-    mb: '12px',
+    mb: '12px'
   },
   descriptionStyle: {
     fontSize: ['15px', '16px', '16px', '16px', '16px'],
     color: 'textColor',
     lineHeight: '1.75',
     textAlign: 'center',
-    mb: '0',
+    mb: '0'
   },
   priceStyle: {
     as: 'span',
@@ -283,14 +263,14 @@ PricingSection.defaultProps = {
     color: 'headingColor',
     textAlign: 'center',
     mb: '5px',
-    letterSpacing: '-0.025em',
+    letterSpacing: '-0.025em'
   },
   priceLabelStyle: {
     fontSize: ['13px', '14px', '14px', '14px', '14px'],
     color: 'textColor',
     lineHeight: '1.75',
     textAlign: 'center',
-    mb: '0',
+    mb: '0'
   },
   buttonStyle: {
     type: 'button',
@@ -301,7 +281,7 @@ PricingSection.defaultProps = {
     pr: '10px',
     colors: 'primary',
     width: '222px',
-    maxWidth: '100%',
+    maxWidth: '100%'
   },
   buttonFillStyle: {
     type: 'button',
@@ -313,13 +293,13 @@ PricingSection.defaultProps = {
     pr: '10px',
     colors: 'primaryWithBg',
     width: '200px',
-    maxWidth: '100%',
+    maxWidth: '100%'
   },
   listContentStyle: {
     fontSize: ['15px', '16px', '16px', '16px', '16px'],
     color: 'textColor',
-    mb: '0',
-  },
+    mb: '0'
+  }
 };
 
 export default PricingSection;

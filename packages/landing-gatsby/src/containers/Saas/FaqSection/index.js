@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import Box from 'common/src/components/Box';
 import Text from 'common/src/components/Text';
 import Heading from 'common/src/components/Heading';
-import Button from 'common/src/components/Button';
 import Container from 'common/src/components/UI/Container';
 import {
   Accordion,
@@ -25,9 +24,7 @@ const FaqSection = ({
   sectionTitle,
   sectionSubTitle,
   titleStyle,
-  descriptionStyle,
-  buttonWrapper,
-  button,
+  descriptionStyle
 }) => {
   const Data = useStaticQuery(graphql`
     query {
@@ -79,11 +76,6 @@ const FaqSection = ({
               ))}
             </Fragment>
           </Accordion>
-          <Box {...buttonWrapper}>
-            <a href="#1">
-              <Button {...button} />
-            </a>
-          </Box>
         </Box>
       </Container>
     </FaqSectionWrapper>
@@ -121,7 +113,7 @@ FaqSection.defaultProps = {
   },
   // section title default style
   sectionTitle: {
-    content: 'Want to ask something about us ?',
+    content: 'How can we help you ?',
     textAlign: 'center',
     fontSize: ['20px', '24px'],
     fontWeight: '400',
