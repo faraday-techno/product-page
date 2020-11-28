@@ -27,16 +27,13 @@ const PartnerSection = ({
             <Image src={Partner} alt="Domain Image" />
           </Box>
           <Box {...col} {...textArea}>
-            <Heading
-              {...title}
-              content="International support"
-            />
+            <Heading {...title} content="International support" />
             <Text
               {...description}
               content="Superfly designed to support all the regions where Amazon Relay operates."
             />
             <Box>
-              <a href="#3">
+              <a href="#feature_section">
                 <Button {...button} title="LEARN MORE" />
               </a>
             </Box>

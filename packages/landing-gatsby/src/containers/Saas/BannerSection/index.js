@@ -38,13 +38,13 @@ const BannerSection = ({
   };
   const ButtonGroup = () => (
     <Fragment>
-      <AnchorLink
-        href="#pricing_section"
-        offset="70"
-        onClick={() => toggleDrawer}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://chrome.google.com/webstore/detail/relay-auto-booker/ikdalniioengaefjkpkhfcgjemdfhpfg"
       >
         <Button title="DOWNLOAD" {...btnStyle} />
-      </AnchorLink>
+      </a>
       <AnchorLink
         href="#feature_section"
         offset="70"
@@ -66,8 +66,12 @@ const BannerSection = ({
         <Box className="row" {...row}>
           <Box className="col" {...col}>
             <DiscountLabel>
-              <Text content="50% Discount" {...discountAmount} />
-              <Text content="on first month " {...discountText} />
+              <Text content="Use code " {...discountText} />
+              <Text content="WEBSTORE" {...discountAmount} />
+              <Text
+                content=" save 10% of your subscription "
+                {...discountText}
+              />
             </DiscountLabel>
             <FeatureBlock
               title={

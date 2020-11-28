@@ -9,7 +9,7 @@
     {
       "id": 2,
       "title": "When I try to add the extension there is a 'Price not available' message instead of buy button. What to do?",
-      "description": "When you encounter this issue, simply change the location to United States from settings icon located right next to your email address."
+      "description": "When you encounter this issue, simply change the location to United States from settings icon located right before your email address on top right."
     },
     {
       "id": 3,
@@ -206,11 +206,6 @@
       "offset": "70"
     },
     {
-      "label": "Testimonial",
-      "path": "#testimonial_section",
-      "offset": "70"
-    },
-    {
       "label": "FAQ",
       "path": "#faq_section",
       "offset": "70"
@@ -267,7 +262,7 @@
       "name": "Yearly Membership",
       "description": "Gives you access to all of the features and updates for less",
       "price": "$479.99",
-      "priceLabel": "Charged per year & SAVE 20%",
+      "priceLabel": "Charged per year & SAVE 20% (You can change to yearly by dropdown)",
       "buttonLabel": "PURCHASE",
       "url": "#",
         "listItems": [
