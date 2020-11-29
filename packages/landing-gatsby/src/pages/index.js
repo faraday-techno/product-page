@@ -6,14 +6,11 @@ import { ResetCSS } from 'common/src/assets/css/style';
 import { GlobalStyle, ContentWrapper } from '../containers/Saas/saas.style';
 import Navbar from '../containers/Saas/Navbar';
 import BannerSection from '../containers/Saas/BannerSection';
-// import VisitorSection from '../containers/Saas/VisitorSection';
 import ServiceSection from '../containers/Saas/ServiceSection';
 import FaqSection from '../containers/Saas/FaqSection';
 import Footer from '../containers/Saas/Footer';
 import PricingSection from '../containers/Saas/PricingSection';
-// import TrialSection from '../containers/Saas/TrialSection';
-// import TimelineSection from '../containers/Saas/TimelineSection';
-// import TestimonialSection from '../containers/Saas/TestimonialSection';
+import PrivacySection from '../containers/Saas/PrivacySection';
 import PartnerSection from '../containers/Saas/PartnerSection';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import SEO from '../components/seo';
@@ -33,13 +30,10 @@ export default () => {
           </Sticky>
           <BannerSection />
           <ServiceSection />
-          {/* <VisitorSection /> */}
           <PricingSection />
-          {/* <TestimonialSection /> */}
           <PartnerSection />
-          {/* <TimelineSection /> */}
           <FaqSection />
-          {/* <TrialSection /> */}
+          <PrivacySection />
           <Footer />
         </ContentWrapper>
       </Fragment>
