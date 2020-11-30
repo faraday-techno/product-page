@@ -98,28 +98,6 @@ const PricingSection = ({
         <Box {...secTitleWrapper}>
           <Text {...secText} />
           <Heading {...secHeading} />
-          {/* <PricingButtonWrapper>
-            <Button
-              title="Monthly Plan"
-              className={activeStatus ? 'active-item' : ''}
-              onClick={() =>
-                setState({
-                  data: Data.saasJson.MONTHLY_PRICING_TABLE,
-                  active: true,
-                })
-              }
-            />
-            <Button
-              title="Annual Plan"
-              className={activeStatus === false ? 'active-item' : ''}
-              onClick={() =>
-                setState({
-                  data: Data.saasJson.YEARLY_PRICING_TABLE,
-                  active: false,
-                })
-              }
-            />
-          </PricingButtonWrapper> */}
         </Box>
         <Box {...row}>
           <GlideCarousel
@@ -149,7 +127,11 @@ const PricingSection = ({
                       />
                     </PricingPrice>
                     <PricingButton>
-                      <a href={pricingTable.url}>
+                      <a
+                        href={pricingTable.url}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         {pricingTable.freePlan ? (
                           <Button
                             title={pricingTable.buttonLabel}

@@ -60,6 +60,11 @@
       "id": 12,
       "title": "Where can I see the extension in Action?",
       "description": "You can find product demonstration in our youtube channel."
+    },
+    {
+      "id": 13,
+      "title": "How to cancel the subscription?",
+      "description": "You should have received receipt from Gumroad. There is a Manager Membership link which takes you to Subscription page."
     }
   ],
   "Features": [
@@ -86,14 +91,6 @@
     {
       "title": "Useful Links",
       "menuItems": [
-        {
-          "url": "#",
-          "text": "Privacy Policy"
-        },
-        {
-          "url": "#",
-          "text": "Permissions"
-        },
         {
           "url": "https://www.youtube.com/channel/UCJud09aGrK02h5tU_I4xUAQ",
           "text": "YouTube"
@@ -218,7 +215,7 @@
       "price": "$49.99",
       "priceLabel": "Charged per month",
       "buttonLabel": "PURCHASE",
-      "url": "#",
+      "url": "https://gum.co/superfly",
       "listItems": [
         {
           "content": "Auto book loads based on set filters"
@@ -264,8 +261,8 @@
       "price": "$479.99",
       "priceLabel": "Charged per year & SAVE 20% (You can change to yearly by dropdown)",
       "buttonLabel": "PURCHASE",
-      "url": "#",
-        "listItems": [
+      "url": "https://gum.co/superfly",
+      "listItems": [
         {
           "content": "Auto book loads based on set filters"
         },
