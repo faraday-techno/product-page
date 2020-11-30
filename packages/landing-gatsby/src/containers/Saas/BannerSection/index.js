@@ -9,7 +9,6 @@ import Heading from 'common/src/components/Heading';
 import Button from 'common/src/components/Button';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
-import Particles from '../Particle';
 import BannerWrapper, {
   DiscountLabel,
   BannerObject
@@ -61,7 +60,6 @@ const BannerSection = ({
   );
   return (
     <BannerWrapper id="banner_section">
-      <Particles />
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
@@ -69,7 +67,7 @@ const BannerSection = ({
               <Text content="Use code " {...discountText} />
               <Text content="WEBSTORE" {...discountAmount} />
               <Text
-                content=" save 10% of your subscription "
+                content=" save 10% of your subscription every month"
                 {...discountText}
               />
             </DiscountLabel>

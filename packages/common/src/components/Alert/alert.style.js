@@ -6,13 +6,15 @@ import { base } from '../base';
 
 const AlertStyle = styled.div`
   /* Alert default style */
-  padding: 20px 25px;
+  padding: 10px 10px;
+  margin: 10px;
   border-radius: 4px;
   border-width: 1px;
   border-style: solid;
   border-color: ${themeGet('colors.borderColor', '#dadada')};
   font-size: ${themeGet('fontSizes.4', '16')}px;
   color: ${themeGet('colors.textColor', '#484848')};
+  background: lightgoldenrodyellow;
 
   p {
     &:last-child {

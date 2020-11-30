@@ -206,6 +206,11 @@
       "label": "FAQ",
       "path": "#faq_section",
       "offset": "70"
+    },
+    {
+      "label": "Privacy Policy",
+      "path": "#privacy",
+      "offset": "70"
     }
   ],
   "MONTHLY_PRICING_TABLE": [
