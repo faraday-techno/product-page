@@ -45,9 +45,21 @@ const Footer = ({
               logoStyle={logoStyle}
             />
             <Text content="bravetechpro@gmail.com" {...textStyle} />
-            <a href="https://t.me/relayautobooker" className="ListItem">
-              Join our Telegram
-            </a>
+            <List>
+              <ListItem>
+                <a href="https://t.me/relayautobooker" className="ListItem">
+                  Join our Telegram Channel
+                </a>
+              </ListItem>
+              <ListItem>
+                <a
+                  href="https://www.youtube.com/channel/UCJud09aGrK02h5tU_I4xUAQ"
+                  className="ListItem"
+                >
+                  Join our Youtube Channel
+                </a>
+              </ListItem>
+            </List>
           </Box>
           {/* End of footer logo column */}
           <Box {...colTwo}>

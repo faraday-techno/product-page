@@ -14,7 +14,6 @@ import PrivacySection from '../containers/Saas/PrivacySection';
 import PartnerSection from '../containers/Saas/PartnerSection';
 import { DrawerProvider } from 'common/src/contexts/DrawerContext';
 import SEO from '../components/seo';
-import Warning from '../containers/Saas/Warning';
 
 export default () => {
   return (
@@ -30,7 +29,6 @@ export default () => {
             </DrawerProvider>
           </Sticky>
           <BannerSection />
-          <Warning />
           <ServiceSection />
           <PricingSection />
           <PartnerSection />

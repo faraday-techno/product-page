@@ -56,7 +56,7 @@ const PricingSection = ({
 
   const pricingCarouselOptions = {
     type: 'slider',
-    perView: 2,
+    perView: 1,
     gap: 30,
     bound: true,
     breakpoints: {

@@ -1,6 +1,12 @@
 {
   "Faq": [
     {
+      "id": 14,
+      "expend": true,
+      "title": "Why we have to switch to Gumroad for payment processing?",
+      "description": "Starting February, Google is retiring Web Store payment processing system. To accomadate that we were noticed to migrate our payment processing vendor. We selected Gumroad because it is easy to use and manage for our users as well as for our managment purposes."
+    },
+    {
       "id": 1,
       "expend": true,
       "title": "Does extension guarantees that all orders will be booked?",
@@ -89,11 +95,11 @@
   ],
   "Footer_Data": [
     {
-      "title": "Useful Links",
+      "title": "",
       "menuItems": [
         {
-          "url": "https://www.youtube.com/channel/UCJud09aGrK02h5tU_I4xUAQ",
-          "text": "YouTube"
+          "url": "",
+          "text": ""
         }
       ]
     }
@@ -216,48 +222,12 @@
   "MONTHLY_PRICING_TABLE": [
     {
       "name": "Monthly Membership",
-      "description": "Gives you access to all of the features and updates",
+      "description": "Gives you access to all of the features and updates under one price. No hidden fees or charges. Cancel any time.",
       "price": "$49.99",
       "priceLabel": "Charged per month",
       "buttonLabel": "PURCHASE",
       "url": "https://gum.co/superfly",
       "listItems": [
-        {
-          "content": "Auto book loads based on set filters"
-        },
-        {
-          "content": "Set maximum allowed stops"
-        },
-        {
-          "content": "Detect price increase"
-        },
-        {
-          "content": "Auto Book on price increase"
-        },
-        {
-          "content": "1-Click book feature"
-        },
-        {
-          "content": "Configurable auto refresh"
-        },
-        {
-          "content": "Configurable auto refresh"
-        },
-        {
-          "content": "Sound notifications when new load is booked or appeared on the board"
-        },
-        {
-          "content": "Visual notifications"
-        },
-        {
-          "content": "User friendly interface"
-        },
-        {
-          "content": "Keyboard shortcuts ( '`' key can start and stop the refresher)"
-        },
-        {
-          "content": "Cancel any time"
-        }
       ]
     },
     {
