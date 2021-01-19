@@ -3,8 +3,8 @@
     {
       "id": 14,
       "expend": true,
-      "title": "Why we have to switch to Gumroad for payment processing?",
-      "description": "Starting February, Google is retiring Web Store payment processing system. To accomadate that we were noticed to migrate our payment processing vendor. We selected Gumroad because it is easy to use and manage for our users as well as for our managment purposes."
+      "title": "Why we have to switched to PayPal for payment processing?",
+      "description": "Starting February, Google is retiring Web Store payment processing system. To accomadate that we were noticed to migrate our payment processing vendor. We selected PayPal, because it does not require account or make users sign up. Most of you already have a PayPal account but for some does not have PayPal account you just need to select Debit or Credit Card option to make a purchase."
     },
     {
       "id": 1,
@@ -222,59 +222,11 @@
   "MONTHLY_PRICING_TABLE": [
     {
       "name": "Monthly Membership",
-      "description": "Gives you access to all of the features and updates under one price. No hidden fees or charges. Cancel any time.",
+      "description": "Gives you access to all of the features and updates under one price. Unlimited number of machine support. No hidden fees or charges. Cancel any time.",
       "price": "$49.99",
       "priceLabel": "Charged per month",
       "buttonLabel": "PURCHASE",
-      "url": "https://gum.co/superfly",
-      "listItems": [
-      ]
-    },
-    {
-      "name": "Yearly Membership",
-      "description": "Gives you access to all of the features and updates for less",
-      "price": "$479.99",
-      "priceLabel": "Charged per year & SAVE 20% (You can change to yearly by dropdown)",
-      "buttonLabel": "PURCHASE",
-      "url": "https://gum.co/superfly",
-      "listItems": [
-        {
-          "content": "Auto book loads based on set filters"
-        },
-        {
-          "content": "Set maximum allowed stops"
-        },
-        {
-          "content": "Detect price increase"
-        },
-        {
-          "content": "Auto Book on price increase"
-        },
-        {
-          "content": "1-Click book feature"
-        },
-        {
-          "content": "Configurable auto refresh"
-        },
-        {
-          "content": "Configurable auto refresh"
-        },
-        {
-          "content": "Sound notifications when new load is booked or appeared on the board"
-        },
-        {
-          "content": "Visual notifications"
-        },
-        {
-          "content": "User friendly interface"
-        },
-        {
-          "content": "Keyboard shortcuts ( '`' key can start and stop the refresher)"
-        },
-        {
-          "content": "Cancel any time"
-        }
-      ]
+      "url": "https://gum.co/superfly"
     }
   ],
   "YEARLY_PRICING_TABLE": [

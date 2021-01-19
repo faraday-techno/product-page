@@ -40,7 +40,8 @@
     "react-stickynode": "2.1.1",
     "styled-components": "^5.1.1",
     "styled-system": "5.1.5",
-    "@styled-system/theme-get": "^5.1.2"
+    "@styled-system/theme-get": "^5.1.2",
+    "@paypal/react-paypal-js": "^3.0.3"
   },
   "scripts": {
     "build": "gatsby build",

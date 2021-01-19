@@ -9,10 +9,7 @@ import Heading from 'common/src/components/Heading';
 import Button from 'common/src/components/Button';
 import FeatureBlock from 'common/src/components/FeatureBlock';
 import Container from 'common/src/components/UI/Container';
-import BannerWrapper, {
-  DiscountLabel,
-  BannerObject
-} from './bannerSection.style';
+import BannerWrapper, { BannerObject } from './bannerSection.style';
 import { DrawerContext } from 'common/src/contexts/DrawerContext';
 
 import BannerObject1 from 'common/src/assets/image/saas/banner/bannerObject1.png';
@@ -24,15 +21,13 @@ const BannerSection = ({
   title,
   btnStyle,
   description,
-  discountText,
-  discountAmount,
-  outlineBtnStyle
+  outlineBtnStyle,
 }) => {
   const { dispatch } = useContext(DrawerContext);
   // Close drawer when click on menu item
   const toggleDrawer = () => {
     dispatch({
-      type: 'TOGGLE'
+      type: 'TOGGLE',
     });
   };
   const ButtonGroup = () => (
@@ -63,14 +58,6 @@ const BannerSection = ({
       <Container>
         <Box className="row" {...row}>
           <Box className="col" {...col}>
-            <DiscountLabel>
-              <Text content="Use code " {...discountText} />
-              <Text content="WEBSTORE" {...discountAmount} />
-              <Text
-                content=" save 10% of your subscription every month"
-                {...discountText}
-              />
-            </DiscountLabel>
             <FeatureBlock
               title={
                 <Heading content="Amazon Relay Digital Helper." {...title} />
@@ -109,7 +96,7 @@ BannerSection.propTypes = {
   contentStyle: PropTypes.object,
   discountText: PropTypes.object,
   discountAmount: PropTypes.object,
-  outlineBtnStyle: PropTypes.object
+  outlineBtnStyle: PropTypes.object,
 };
 
 BannerSection.defaultProps = {
@@ -118,12 +105,12 @@ BannerSection.defaultProps = {
     flexWrap: 'wrap',
     ml: '-15px',
     mr: '-15px',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   col: {
     pr: '15px',
     pl: '15px',
-    width: [1, '70%', '50%', '45%']
+    width: [1, '70%', '50%', '45%'],
   },
   title: {
     fontSize: ['22px', '34px', '30px', '55px'],
@@ -131,26 +118,26 @@ BannerSection.defaultProps = {
     color: '#0f2137',
     letterSpacing: '-0.025em',
     mb: ['20px', '25px'],
-    lineHeight: '1.5'
+    lineHeight: '1.5',
   },
   description: {
     fontSize: '16px',
     color: '#343d48cc',
     lineHeight: '1.75',
-    mb: '0'
+    mb: '0',
   },
   btnStyle: {
     minWidth: ['120px', '120px', '120px', '156px'],
     fontSize: ['13px', '14px'],
     fontWeight: '500',
-    colors: 'primaryWithBg'
+    colors: 'primaryWithBg',
   },
   outlineBtnStyle: {
     minWidth: '156px',
     fontSize: '14px',
     fontWeight: '500',
     color: '#5167db',
-    ml: '18px'
+    ml: '18px',
   },
   discountAmount: {
     fontSize: '14px',
@@ -158,15 +145,15 @@ BannerSection.defaultProps = {
     mb: 0,
     as: 'span',
     mr: '0.4em',
-    fontWeight: 700
+    fontWeight: 700,
   },
   discountText: {
     fontSize: ['13px', '14px'],
     color: '#0f2137',
     mb: 0,
     as: 'span',
-    fontWeight: 500
-  }
+    fontWeight: 500,
+  },
 };
 
 export default BannerSection;
