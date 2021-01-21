@@ -40,7 +40,6 @@ const PricingSection = ({
       }
     }
   `);
-
   const data = Data.saasJson.MONTHLY_PRICING_TABLE;
 
   const pricingCarouselOptions = {

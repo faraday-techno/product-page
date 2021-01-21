@@ -2,6 +2,11 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 
 export const GlobalStyle = createGlobalStyle`
+  :root {
+    --st-dialog-maxWidth: none;
+    --st-modal-borderRadius: 4px;
+    --st-dialog-baseWidth: none;
+  }
   body{
     font-family: 'Roboto', sans-serif;
   }

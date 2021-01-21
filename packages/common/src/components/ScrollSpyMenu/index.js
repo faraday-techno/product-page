@@ -11,7 +11,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
   const scrollItems = [];
 
   // convert menu path to scrollspy items
-  menuItems.forEach(item => {
+  menuItems.forEach((item) => {
     scrollItems.push(item.path.slice(1));
   });
 
@@ -40,7 +40,9 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
           {menu.staticLink ? (
-            <a href={menu.path}>{menu.label}</a>
+            <a href={menu.path} target="_blank">
+              {menu.label}
+            </a>
           ) : (
             <>
               {drawerClose ? (

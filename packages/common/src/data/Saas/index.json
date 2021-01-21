@@ -196,27 +196,38 @@
     {
       "label": "Home",
       "path": "#banner_section",
+      "staticLink": "false",
       "offset": "70"
     },
     {
       "label": "Feature",
       "path": "#feature_section",
+      "staticLink": "false",
       "offset": "70"
     },
     {
       "label": "Pricing",
       "path": "#pricing_section",
+      "staticLink": "false",
       "offset": "70"
     },
     {
       "label": "FAQ",
       "path": "#faq_section",
+      "staticLink": "false",
       "offset": "70"
     },
     {
       "label": "Privacy Policy",
       "path": "#privacy",
+      "staticLink": "false",
       "offset": "70"
+    },
+    {
+      "label": "Account Settings",
+      "path": "https://paypal.com/myaccount/summary?intl=0",
+      "offset": "70",
+      "staticLink": "true"
     }
   ],
   "MONTHLY_PRICING_TABLE": [
