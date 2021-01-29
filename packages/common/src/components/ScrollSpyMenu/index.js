@@ -40,7 +40,7 @@ const ScrollSpyMenu = ({ className, menuItems, drawerClose, ...props }) => {
       {menuItems.map((menu, index) => (
         <li key={`menu-item-${index}`}>
           {menu.staticLink ? (
-            <a href={menu.path} target="_blank">
+            <a href={menu.path} target="_blank" rel="noreferrer">
               {menu.label}
             </a>
           ) : (
